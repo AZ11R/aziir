@@ -2,7 +2,7 @@ baseURL: "https://az11r.dev/"
 defaultContentLanguage: "en"
 languageCode: "en"
 theme: "LoveIt"
-title: "aziir"
+title: "az11r"
 enableEmoji: true
 enableRobotsTXT: true
 markup:
@@ -49,20 +49,20 @@ languages:
           weight: 3
         - identifier: "github"
           pre: "<i class='fab fa-github fa-fw'></i>"
-          url: "https://github.com/aziir"
+          url: "https://github.com/az11r"
           title: "GitHub"
           weight: 4
 
 params:
   version: "0.2.X"
-  gitRepo: "https://github.com/aziir"
+  gitRepo: "https://github.com/az11r"
   defaultTheme: "dark"
   search:
     enable: true
     type: "lunr"
   header:
     title:
-      name: "aziir.dev"
+      name: "az11r.dev"
       typeit: true
       pre: "<i class='fa fa-terminal fa-fw'></i> "
       post: ""
@@ -81,7 +81,7 @@ params:
       enable: true
       paginate: 6
   social:
-    GitHub: "aziir"
+    GitHub: "az11r"
     Linkedin: "aziir"
     Email: "nesibf@gmail.com"
     RSS: true
@@ -97,7 +97,7 @@ params:
       enable: true
       utterances:
         enable: true
-        repo: "aziir/aziir.github.io"
+        repo: "az11r/az11r.github.io"
         issueTerm: "pathname"
         label: "comment"
         lightTheme: "github-light"
@@ -115,6 +115,6 @@ permalinks:
 author:
   name: "Nesib"
   email: "nesibf@gmail.com"
-  link: "https://aziir.dev"
+  link: "https://az11r.dev"
 outputs:
   home: ["HTML", "JSON", "RSS"]
