@@ -1,0 +1,120 @@
+baseURL: "https://aziir.dev/"
+defaultContentLanguage: "en"
+languageCode: "en"
+theme: "LoveIt"
+title: "aziir"
+enableEmoji: true
+enableRobotsTXT: true
+markup:
+  highlight:
+    lineNos: true
+    noClasses: false
+
+languages:
+  en:
+    weight: 2
+    languageCode: "en"
+    languageName: "English"
+    params:
+      dateFormat: "2006-01-02"
+      section:
+        dateFormat: "01-02"
+      list:
+        dateFormat: "01-02"
+      home:
+        profile:
+          subtitle: "This is my blog about technology. "
+          enable: true
+          gravatarEmail: "nesibf@gmail.com"
+          title: ""
+          disclaimer: ""
+          typeit: true
+          social: true
+    menu:
+      main:
+        - identifier: "posts"
+          name: "Posts"
+          url: "/posts/"
+          weight: 1
+          pre: "<i class='fa fa-book fa-fw'></i>"
+        - identifier: "tags"
+          name: "Tags"
+          url: "/tags/"
+          weight: 2
+          pre: "<i class='fa fa-tags fa-fw'></i>"
+        - identifier: "about"
+          name: "About"
+          url: "/about/"
+          pre: "<i class='fa fa-user fa-fw'></i>"
+          weight: 3
+        - identifier: "github"
+          pre: "<i class='fab fa-github fa-fw'></i>"
+          url: "https://github.com/aziir"
+          title: "GitHub"
+          weight: 4
+
+params:
+  version: "0.2.X"
+  gitRepo: "https://github.com/aziir"
+  defaultTheme: "dark"
+  search:
+    enable: true
+    type: "lunr"
+  header:
+    title:
+      name: "aziir.dev"
+      typeit: true
+      pre: "<i class='fa fa-terminal fa-fw'></i> "
+      post: ""
+  footer:
+    enable: true
+    hugo: false
+    copyright: true
+    author: true
+    since: 2020
+  section: # all posts
+    paginate: 20
+  list: # category or tag
+    paginate: 20
+  home:
+    posts:
+      enable: true
+      paginate: 6
+  social:
+    GitHub: "aziir"
+    Linkedin: "aziir"
+    Email: "nesibf@gmail.com"
+    RSS: true
+  page:
+    code:
+      copy: true
+    share:
+      enable: true
+      Twitter: true
+      Linkedin: true
+      Whatsapp: true
+    comment:
+      enable: true
+      utterances:
+        enable: true
+        repo: "aziir/aziir.github.io"
+        issueTerm: "pathname"
+        label: "comment"
+        lightTheme: "github-light"
+        darkTheme: "github-dark"
+  typeit:
+    cursorChar: "|"
+    duration: -1
+  analytics:
+    enable: true
+    google:
+      id: "UA-174922167-1"
+      anonymizeIP: true
+permalinks:
+  posts: ":filename"
+author:
+  name: "Nesib"
+  email: "nesibf@gmail.com"
+  link: "https://aziir.dev"
+outputs:
+  home: ["HTML", "JSON", "RSS"]
