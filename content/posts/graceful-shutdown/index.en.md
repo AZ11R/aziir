@@ -78,7 +78,7 @@ However, [Kubernetes](https://kubernetes.io/) and [Istio](https://istio.io/) hav
 The most common implementation of graceful shutdown in Go is using [Goroutines](https://gobyexample.com/goroutines) 
 and [Channels](https://gobyexample.com/channels), as shown in the example below.
 
-{{< gist aziir 3e66745244ae7c0c888e51c3eacc59a2 "stdlib.go" >}}
+{{< gist az11r 3e66745244ae7c0c888e51c3eacc59a2 "stdlib.go" >}}
 
 In this example, the HTTP server is initialized in a new Goroutine while the main Goroutine waits for a signal on the `quit` channel.
 
@@ -99,7 +99,7 @@ I would recommend [ory/graceful](https://github.com/ory/graceful).
 
 {{< admonition tip >}}
 An adaptation of the above example using the [ory/graceful](https://github.com/ory/graceful) library 
-is available on my [GitHub](https://github.com/aziir/go-graceful/blob/master/ory.go).
+is available on my [GitHub](https://github.com/az11r/go-graceful/blob/master/ory.go).
 {{< /admonition >}}
 
 ## Kubernetes
